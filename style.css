@@ -1,0 +1,466 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Epilogue", sans-serif;
+}
+/* Dropdown nav menu */
+nav::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.logo {
+  position: absolute;
+  margin: 30px 0 0 70px;
+}
+nav ul {
+  float: left;
+  list-style: none;
+ margin-left: 180px;
+ margin-top: 5px;
+  position: relative;
+}
+nav ul li {
+  float: left;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 8px 15px;
+}
+nav ul li a:hover {
+ color: hsl(0, 0%, 8%);
+ border-radius: 5px;
+}
+nav ul ul {
+  position: absolute;
+  top: 55px;
+  opacity: 0;
+  margin-left: -35px;
+  visibility: hidden;
+}
+#dropdown-menu {
+  margin-left: 15px;
+}
+nav ul ul ul {
+  border-top: none;
+}
+nav ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  transition: 1s;
+}
+nav ul ul li {
+  position: relative;
+  margin: 0;
+  width: 120px;
+  float: none;
+  display: list-item;
+  box-shadow: 0 5px 5px rgb(206, 206, 206);
+  background-color: white;
+}
+nav ul ul li:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-top: 5px;
+}
+nav ul ul li:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-bottom: 5px;
+}
+nav ul ul li a {
+  line-height: 30px;
+  font-size: 0.75rem;
+}
+nav ul ul ul li {
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+#nav-btn{
+  float: right;
+  margin-right: 40px;
+}
+.register-btn {
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 10px;
+}
+.register-btn:hover {
+  border: 2px solid hsl(0, 0%, 8%);
+  border-radius: 10px;
+}
+.icon {
+  display: none;
+}
+@media (max-width: 954px) {
+nav {
+  display: none;
+}
+}
+
+/* Hero section */
+.container {
+display: flex;
+flex-direction: row;
+margin: 6rem 6rem 6rem 12rem;
+}
+.left-item {
+  width: 50%;
+  padding: 1rem;
+  margin-top: 25px;
+}
+h1 {
+ font-size: 3.875rem;
+ font-weight: 700;
+}
+p {
+  margin-top: 35px;
+  color: hsl(0, 0%, 41%);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  width: 90%;
+  margin-bottom: 50px;
+}
+.more-btn{
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  font-size: 0.875rem;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+.images {
+  margin-top: 120px;
+}
+.images img {
+  width: 70px;
+  margin-right: 25px;
+  justify-content: center;
+}
+#audiophile {
+width: 50px;
+}
+.hero  {
+  width: 50%;
+  margin-top: -50px;
+  margin-left: 100px;
+}
+.hero img {
+width: 90%;
+}
+/* Responsive styles
+@media (max-width: 954px) {
+ header{
+  display: none;
+ }
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .hero img {
+   width: 100%;
+  }
+  
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media all and (max-width: 954px) {
+  nav {
+    display: flex;
+  }
+ nav ul li{
+  display: block;
+ }
+
+
+
+}*/
+
+
+
+/*@media all and  (max-width: 968px) {
+  nav ul {
+      margin-left: 0;
+      float: right;
+  }
+  nav ul li, nav ul ul li{
+      display: block;
+      width: 100%;
+  }
+  nav ul ul {
+      top: 70px;
+      position: static;
+      border-top: none;
+      float: none;
+      display: none;
+      opacity: 1;
+      visibility: visible;
+  }
+  nav ul ul ul li {
+      position: static;
+  }
+  nav ul ul li {
+      border-bottom: 0;
+  }
+  nav ul ul a {
+      padding-left: 40px;
+  }
+  nav ul ul ul a {
+      padding-left: 80px;
+  }
+  .show {
+      display: block;
+      color: white;
+      font-size: 18px;
+      padding: 0 20px;
+      line-height: 70px;
+      cursor: pointer;
+  }
+  .icon{
+      display: block;
+      color: white;
+      position: absolute;
+      right: 40px;
+      line-height: 70px;
+      font-size: 25px;
+      cursor: pointer;
+  }
+  nav ul li a:hover{
+      box-shadow: none;
+  }
+  .show + a, ul {
+      display: none;
+  }
+  [id^=btn]:checked + ul{
+      display: block;
+  }
+}
+
+
+*/
+
+
+
+/* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Epilogue", sans-serif;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav {
+  width: 90%;
+}
+
+nav ul {
+  display: flex;
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.nav-links ul li {
+  padding: 2px 10px;
+}
+.navbar ul li {
+  position: relative;
+  float: left;
+  margin-left: 1.5rem;
+}
+.navbar ul li a {
+  font-size: 0.75;
+  padding: 10px;
+  color: hsl(0, 0%, 41%);
+  display: block;
+}
+.navbar ul li a:hover {
+  color: hsl(0, 0%, 8%);
+}
+.navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: hsl(0, 0%, 98%);
+  font-size: 0.75rem;
+  text-align: center;
+  display: none;
+}
+.dropdown-menu li {
+  left: -80px;
+}
+header .navbar ul li ul li {
+  width: 130px;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0 5px 5px rgb(206, 206, 206);
+}
+.navbar ul li ul li ul {
+  left: 200px;
+  top: 0;
+}
+.dd-menu {
+  margin-left: -15px;
+}
+.navbar ul li:focus-within > ul,
+.navbar ul li:hover > ul {
+  display: initial;
+}
+.nav-links {
+  border-radius: 10px;
+}
+#menu-bar {
+    display: none;
+}
+.menu-bar {
+    display: none;
+}
+
+.nav-btn {
+    display: flex;d
+   justify-content: space-between;
+}
+.nav-btn li a {
+    color: hsl(0, 0%, 41%);
+    font-size: 0.875rem;
+    padding: 10px 15px;
+    background-color: hsl(0, 0%, 98%);
+}
+.nav-btn li a:hover {
+    color: hsl(0, 0%, 8%);
+}
+.register-btn {
+    border-radius: 10px;
+    border: 2px solid hsl(0, 0%, 41%);
+}
+.register-btn:hover {
+    border: 2px solid hsl(0, 0%, 8%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+   
+}
+
+
+*/
+
+
+
+/*  header {
+        padding: 30px;
+    }
+
+    header label {
+        display: initial;
+    }
+    header .navbar {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        right: 0;
+        background-color: #fff;
+        display: none;
+        width: 50%;
+       height: 600px;
+       padding: 10px;
+    }
+    header .navbar ul li {
+        width: 100%;
+        position: relative;
+    }
+    header .navbar ul li ul li {
+    background-color: black;
+    position: relative;
+
+    }
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+    .menu-bar {
+        display: initial;
+    }
+    .nav-btn  {
+      width: 70%;
+      text-align: center;
+      display: block;
+      position: relative;
+      margin: auto;
+    }
+  */
+
+  
